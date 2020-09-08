@@ -1,31 +1,52 @@
-let val;
-const today = new Date();
-console.log(today);
-// let birthday = new Date('9-10-1981 11:25:00');
-let birthday = new Date('September-10-1981 11:25:00');
-birthday = new Date('1/10/1981 11:25:00');
-console.log('birthday: ' + birthday);
-val = today.getMonth();
-console.log('Month ' + val);
-val = today.getDate();
-console.log(val);
-val = today.getDay();
-console.log(val);
-val = today.getFullYear();
-console.log(val);
-val = today.getHours();
-console.log(val);
-val = today.getMinutes();
-console.log(val);
-val = today.getMonth();
-console.log(val);
-console.log('----------------');
-birthday = new Date('01-01-1900 00:00:00');
-// console.log(birthday);
-birthday.setMonth(11);
-birthday.setDate(11);
-birthday.setFullYear(2000);
-birthday.setHours(11);
-birthday.setMinutes(11);
-birthday.setSeconds(25);
-console.log(birthday);
+// if-statements
+
+
+let id = 100;
+// EQAUL TO
+if (id == 100) {
+  console.log('CORRECT');
+} else {
+  console.error('INCORRECT');
+}
+
+// NOT EQUAL TO
+if (id != 101) {
+  console.log('CORRECT');
+} else {
+  console.log('Incorrect');
+
+}
+// EQAUL TO VALUE AND TYPE
+// mostly used === 
+id = '100';
+if (id === 100) {
+  console.log('CORRECT Type and value');
+  console.log(typeof id);
+} else {
+  console.log('INCORRECT ');
+  console.log(typeof id + ' type, it should be a number');
+}
+
+// // const testId = 1100;
+// if (testId) {
+//   console.log(`The ID is ${testId}`);
+// }
+// else {
+//   console.log('NO ID');
+// }
+//TO TEST IF SOMETHING IS UNDEFINED OR IF IT IS NOT THERE AT ALL THEN YOU SHOULD USE THIS.
+// TEST IF UNDEFINED
+if (typeof noVariableDefined !== 'undefined') {
+  console.log(`The ID is ${noVariableDefined}`);
+} else {
+  console.log('NO ID FOUND');
+}
+const name = 'Rashed';
+const age = 32;
+if (age <= 28 && age >= 60) {
+  console.log(`${name} is under age`);
+} else {
+  console.log(`${name} is valid age`);
+}
+// OR || && works a like java
+console.log(name === 'Rashed' ? 'CORRECT' : 'INCORRECT');
