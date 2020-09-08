@@ -1,86 +1,58 @@
+let val;
+
+// Number to string
+val = 5;
+// output
+console.log(val);
+console.log(typeof val);
+// val.length works if the type is string
+console.log(val.length);
+// Number to String
+val = String(55);
+val = String(4 + 4);
+// bool to string
+val = String(true);
+
+// date to string
+val = String(new Date);
+// array to string
+val = String([1, 2, 3, 4, 5]);
+
+
+// OR
+val = (5).toString();
+val = (true).toString(),
+  // output
+  console.log(val);
+console.log(typeof val);
+// val.length works if the type is string
+console.log(val.length);
+
+// String to number
+let num = '5';
+console.log(num);
+// console.log(num.toFixed(2));
+console.log(typeof num);
+console.log(num.length);
+console.log('------------------')
+num = Number('5');
+console.log(num);
+num = Number(true);
+num = Number(false);
+num = Number(null);
+num = Number('Hello');
+num = Number([1, 2, 3, 4]);
+console.log(typeof num);
+console.log(num);
+console.log(num.length);
+console.log(num.toFixed(3));
+// NaN: Not a number
+console.log('------------------')
+num = parseInt('100.30');
+num = parseFloat('100.30');
+console.log(typeof num);
+console.log(num);
+console.log(num.toFixed(3));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Primitive data types: Stored directly in the location the variable access. Stored on the stack
-String, Number, Boolean, Null, Undefined, Symbols(ES6)
-
-Reference Data Types: Accessed by reference.
-Object that are stored on the heap
-A pointer to a location in memory.
-Arrays, object leterals, Functions, Dates....
-*/
-// Primitive
-// String
-const name = 'Rashed';
-// numbers
-const age = 32;
-console.log(typeof name);
-console.log(typeof age);
-// boolean
-const hasKids = true;
-console.log(typeof hasKids);
-//Null
-const car = null;
-console.log(typeof car);
-
-// undefined
-let test;
-console.log(typeof test);
-// symbol
-const sys = Symbol();
-console.log(typeof sys);
-
-// Reference Type
-
-// Array
-const hobbies = ['movies', 'musice'];
-console.log(typeof hobbies);
-
-// object literal
-const address = {
-  city: 'Växjö',
-  state: 'kronoberg'
-}
-console.log(typeof address);
-const today = new Date();
-console.log(today);
-console.log(typeof today);
