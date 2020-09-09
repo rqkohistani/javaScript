@@ -1,69 +1,41 @@
-// WINDOW METHODS / OBJECTS / PROPERTIES
+// Global Scope
 
-// ALERT
-// window.alert('Hello world!');
+var a = 1;
+let b = 2;
+const c = 3;
 
-// PROMPT
-// const input = prompt('Type your name');
-// alert(input + ' has been stored in RAM ');
+// function test() {
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log("Function Scope", a, b, c);
+//   // These are separate variables then the global scope
+// }
+// test();
 
-// CONFIRM
-// confirm('Press ok or cancel');
 
-// if (confirm('ok for Good morning, cancel for good evening')) {
-//   console.log('Good morning');
-// } else {
-//   console.log('good evening')
+// if (true) {
+//   // Block Scope
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log("Block (if) Scope", a, b, c);
+//   // we see that withing  the if statement the var a has been changed however let and const remian the same in the global scope
+//   // just get it right never use var
+
 // }
 
-// to get the size the window for some interactive applications
-let val;
-// Outer height and width 
-// resize chrome browser you will see the outerheight 
-// Mostly used for an even when a screen size thi 600 then we use these properites
 
-// This is outer
-val = window.outerHeight;
-val = window.outerWidth;
+// for (let a = 0; a < 10; a++) {
+//   console.log(`Loop:  ${a}`);
+// }
 
-// this is inner 
-val = window.innerHeight;
-val = window.innerWidth;
+// using var
+for (var a = 0; a < 10; a++) {
+  console.log(`Loop:  ${a}`);
+  // see the global var value has been changed 
+}
 
-
-// Location object
-// val = window.location;
-// val = window.location.hostname;
-// val = window.location.host;
-// val = window.location.port;
-val = window.location.href;
-
-
-// Redirect
-// window.location.href = 'http://google.com';
-
-// RELOAD
-// window.location.reload();
-
-// HISTORY OBJECT
-// VISIT FEW WEBSITE AND THEN USE -1 -2 TO GO BACKWARDS AND SO ON
-// window.history.go(-2);
-//  to check how many website are behind us
-
-val = window.history.length;
-
-// Navigator Object
-
-val = window.navigator;
-val = window.navigator.geolocation;
-val = window.navigator.appName;
-val = window.navigator.appVersion;
-val = window.navigator.userAgent;
-val = window.navigator.platform;
-val = window.navigator.vendor;
-val = window.navigator.languages;
-val = window.navigator.language;
-
-
-
-console.log(val);
+console.log("Global Scope", a, b, c);
+// Let and Const have block level scope and
+// var has fucntion level scope
