@@ -1,6 +1,7 @@
 // FUNCTION DECLARAIONS
 
-function greet(firstName = "defualt", lastName = 'Default') {
+// function greet(firstName = "defualt", lastName = 'Default') {
+function greet(firstName, lastName) {
   return 'Hello ' + firstName + ' ' + lastName;
 }
 
