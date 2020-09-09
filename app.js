@@ -1,73 +1,69 @@
-// LOOPS IN JAVASCRIPT WORKS AS JAVA
+// WINDOW METHODS / OBJECTS / PROPERTIES
 
-// LOOP THROUGH ARRAY
-const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
-for (let i = 0; i < cars.length; i++) {
-  console.log(cars[i]);
-}
+// ALERT
+// window.alert('Hello world!');
 
-console.log('---------------------')
+// PROMPT
+// const input = prompt('Type your name');
+// alert(input + ' has been stored in RAM ');
 
-// FOREACH LOOP 
+// CONFIRM
+// confirm('Press ok or cancel');
 
-const cars2 = ['Ford', 'Chevy', 'Honda', 'Toyota'];
-// cars2.forEach(function (car) {
-//   console.log(car);
+// if (confirm('ok for Good morning, cancel for good evening')) {
+//   console.log('Good morning');
+// } else {
+//   console.log('good evening')
+// }
 
-// cars2.forEach(function (car, index) {
-//   console.log(`${index}: ${car}`);
+// to get the size the window for some interactive applications
+let val;
+// Outer height and width 
+// resize chrome browser you will see the outerheight 
+// Mostly used for an even when a screen size thi 600 then we use these properites
 
-cars2.forEach(function (car, index, array) {
-  // console.log(`${index}: ${car}`);
-  console.log(array);
-});
-console.log('---------------------')
-const users = [
-  { id: 1, name: 'Rashed' },
-  { id: 2, name: 'Adam' },
-  { id: 3, name: 'Munish' },
-];
-console.log(users[0]);
-users.forEach(function (user) {
-  console.log(user);
-});
-console.log('---------------------')
-users.forEach(function (user, index) {
-  // console.log(user);
-  // console.log(`${index}: ${user}`);
-  console.log(`${index}: ${user.id} ${user.name}`);
+// This is outer
+val = window.outerHeight;
+val = window.outerWidth;
 
-});
-console.log('---------------------')
+// this is inner 
+val = window.innerHeight;
+val = window.innerWidth;
 
-// MAP
-const cutomers = [
-  { id: 100, name: 'D-building' },
-  { id: 200, name: 'F-building' },
-  { id: 300, name: 'N-building' },
-];
 
-// Just taking the ids of customers to create another array ids
-// map();
+// Location object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.host;
+// val = window.location.port;
+val = window.location.href;
 
-const ids = cutomers.map(function (customer) {
-  return customer.id;
-});
-console.log(ids);
 
-console.log('---------------------')
-// FOR IN LOOP
-// USED FOR OBJECTS
-const user = {
-  firstName: 'John',
-  lastname: 'Doe',
-  age: 40,
-};
-// for let x in user
-for (let x in user) {
-  // x gonna give us the keys inside the object user we have a key and valule so x gives us the key
-  // console.log(x);
+// Redirect
+// window.location.href = 'http://google.com';
 
-  //  getting the object
-  console.log(`${x} : ${user[x]}`);
-}
+// RELOAD
+// window.location.reload();
+
+// HISTORY OBJECT
+// VISIT FEW WEBSITE AND THEN USE -1 -2 TO GO BACKWARDS AND SO ON
+// window.history.go(-2);
+//  to check how many website are behind us
+
+val = window.history.length;
+
+// Navigator Object
+
+val = window.navigator;
+val = window.navigator.geolocation;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.languages;
+val = window.navigator.language;
+
+
+
+console.log(val);
